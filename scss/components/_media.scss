@@ -9,8 +9,22 @@
 }
 
 // Большие девайсы (десктопы, >= 992px)
-@media (max-width: 992px) { 
-
+@media (max-width: 992px) {
+  .hero__text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    // padding-top: 200px;
+    // padding-bottom: 237px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 
 // Экстрабольшие девайсы (большие десктопы, >= 1200px)

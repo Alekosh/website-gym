@@ -2,14 +2,14 @@
 
 html,
 body {
-	font-size: 10px;
+	// font-size: 10px;
 }
 body {
-	font-family: $ff-roboto;
-	background: #f4f4f4;
+	font-family: $ff-OpenSans;
+	background: #FFFFFF;
 }
 .container {
-	max-width: 1140px; //1110 + 30padding = 1140px;
+	max-width: 1440px; //1440 + 30padding = 1470;
 	padding: 0 15px;
 	margin: 0 auto;
 }
