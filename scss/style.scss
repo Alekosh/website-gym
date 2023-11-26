@@ -1,0 +1,104 @@
+@import "./index"; // получаем все файлы
+
+html,
+body {
+	font-size: 10px;
+}
+body {
+	font-family: $ff-roboto;
+	background: #f4f4f4;
+}
+.container {
+	max-width: 1140px; //1110 + 30padding = 1140px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+.row {
+	display: flex;
+	flex-wrap: wrap;
+}
+h1 {
+	font-size: 6em;
+} //64px
+h2 {
+	font-size: 4em;
+} //50px
+
+/* Start==================================Важная настройка==================================Start */
+.swiper{
+	display: flex;
+	width: 100%;
+	height: auto;
+	max-width: 1140px; // Меняем на соответствующие параметры
+	margin: 0 auto; // Меняем на соответствующие параметры: margin: 0 auto || margin: 0;
+}
+.swiper-wrapper{
+	box-sizing: content-box; //Надо ли?
+}
+.swiper-slide{
+	display: flex;
+	position: relative;
+}
+.slider .swiper-slide::before{
+	content: '';
+	display: block;
+	background: url('../img/play.png');
+	background-position: center;
+	width: 65px;
+	height: 65px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	cursor: pointer;
+}
+.swiper-slide img{
+	width: 100%;
+	height: 100%;
+}
+// --------------------------
+.swiper-button-prev{
+	background-color: red;
+	left: 20px;
+}
+.swiper-button-next{
+	background-color: red;
+	right: 20px;
+}
+// .swiper-button-next,.swiper-button-prev{
+// 	top: 100%;
+// }
+// .swiper-button-prev::after, .swiper-button-next::after{
+// 	color:aqua;
+// 	font-size: 30px; // для иконночных шрифтов
+// }
+// --------------------------
+// .swiper-pagination-bullet{
+// 	background-color: transparent;
+// 	width: 15px;
+// 	height: 15px;
+// 	opacity: 1;
+// 	border-radius: 0;
+// 	border: 2px solid green;
+// }
+// .swiper-pagination-bullet-active{
+// 	background-color: cyan;
+// }
+/* End==================================Важная настройка==================================End */
+
+.swiper-navigation{
+	max-width: 1140px;
+	margin: 0 auto;
+	display: flex;
+	gap: 20px;
+	margin-top: 50px;
+	
+	.swiperPrev, .swiperNext{
+		cursor: pointer;
+	}
+}
+
+// .justify-content{
+// 	width: calc(100% / 3);
+// }
+

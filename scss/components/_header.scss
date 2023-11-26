@@ -1,0 +1,61 @@
+.header {
+  position: relative;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 0;
+}
+// ===================
+.logo {
+}
+.search {
+}
+.hamburger {
+}
+// ===================
+.main {
+  &::before, &::after{
+    content: '';
+    display: block;
+    position: absolute;
+    background-repeat: no-repeat;
+  }
+
+  &::before{
+    width: 665px;
+    height: 840px;
+    background: url('../../img/gradient_1.jpg');
+    top: 142px;
+    right: 0;
+  }
+  &::after{
+    background: url('../../img/video.jpg');
+    filter: drop-shadow(-20px 60px 220px rgba(0, 0, 0, 0.44));
+    width: 400px;
+    height: 310px;
+    right: 390px;
+  }
+}
+.main__inner {
+}
+.main__title {
+  line-height: 70px;
+  font-weight: $fw-bold;
+  max-width: 474px;
+  margin-bottom: 30px;
+  margin-top: 67px;
+}
+.main__desc {
+  font-size: 1.8em;
+  line-height: 28px;
+  max-width: 474px;
+  margin-bottom: 56px;
+}
+.btn {
+  text-transform: uppercase;
+  color: $white;
+  font-size: 1.4em;
+  background: #3726F2;
+  padding: 20px 32px;
+}
