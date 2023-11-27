@@ -25,6 +25,10 @@
     flex-direction: column;
     justify-content: center;
   }
+  // ================
+  .about__blocks{
+    flex-direction: column-reverse;
+  }
 }
 
 // Экстрабольшие девайсы (большие десктопы, >= 1200px)
