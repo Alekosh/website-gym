@@ -105,3 +105,8 @@ h2 {
 .hidden {
 	display: none;
 }
+
+svg *[fill] {fill: currentColor}
+svg *[stroke] {stroke: currentColor}
+
+// =========
