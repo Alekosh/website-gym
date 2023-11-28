@@ -66,3 +66,24 @@ const swiper = new Swiper('.swiper', {
   //   // }
   // },
 });
+const spans = document.querySelectorAll('.toggle');
+const spansH3 = document.querySelectorAll('.toggle__h3');
+
+const toggle = document.querySelector('input[type="checkbox"]').addEventListener('click', func)
+
+function func() {
+  if (document.querySelector('input[type="checkbox"]').checked) {
+    spans[1].classList.add('price__active');
+    spans[0].classList.remove('price__active')
+
+    spansH3[0].innerHTML = `<h3 class="toggle__h3"><span class="toggle__span">${'$1499'}</span> ${'/Yearly'}</h3>`
+    spansH3[1].innerHTML = `<h3 class="toggle__h3"><span class="toggle__span">${'$3499'}</span> ${'/Yearly'}</h3>`
+
+  } else {
+    spans[0].classList.add('price__active');
+    spans[1].classList.remove('price__active');
+    spansH3[0].innerHTML = `<h3 class="toggle__h3"><span class="toggle__span">${'$100'}</span> ${'/Mount'}</h3>`
+    spansH3[1].innerHTML = `<h3 class="toggle__h3"><span class="toggle__span">${'$499'}</span> ${'/Mount'}</h3>`
+  }
+}
+func()

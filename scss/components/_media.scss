@@ -57,7 +57,10 @@
   .schedule-table td {
     padding: 10px 20px;
   }
-  
+  // =========
+  .price__cards{
+    flex-direction: column;
+  }
 }
 
 // Большие девайсы (десктопы, >= 992px)
@@ -92,5 +95,8 @@
 
 // Экстрабольшие девайсы (большие десктопы, >= 1200px)
 @media (max-width: 1200px) {
+  .price__blocks{
+    flex-direction: column;
+  }
 
 }
