@@ -63,7 +63,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .header {
   position: relative;
-  background: url("/img/bg-hero.jpg") no-repeat;
+  background: url("../img/bg-hero.jpg") no-repeat;
   background-size: cover;
   background-position: center;
   height: 100vh;
