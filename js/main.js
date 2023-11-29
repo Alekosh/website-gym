@@ -66,6 +66,7 @@ const swiper = new Swiper('.swiper', {
   //   // }
   // },
 });
+
 const spans = document.querySelectorAll('.toggle');
 const spansH3 = document.querySelectorAll('.toggle__h3');
 
@@ -87,3 +88,20 @@ function func() {
   }
 }
 func()
+// rating ===================
+
+const ratingITemsList = document.querySelectorAll('.rating__item');
+const ratingItemsArray = Array.prototype.slice.call(ratingITemsList);
+
+ratingItemsArray.forEach(item => {
+  item.addEventListener('click', () => {
+    const { itemValue } = item.dataset;
+    item.parentNode.dataset.totalValue = itemValue;
+
+    // request
+  })
+});
+
+// copyrate ==============
+
+const year = document.querySelector('.current-year').innerHTML = new Date().getFullYear();

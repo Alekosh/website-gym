@@ -19,7 +19,7 @@
 
 <body>
   <!-- Start -->
-  <header class="header hidden">
+  <header class="header">
 
     <div class="container">
 
@@ -28,13 +28,13 @@
         <nav class="menu__body">
           <ul class="menu__list">
             <li class="menu__item"><a href="#" class="menu__link">Home</a></li>
-            <li class="menu__item"><a href="#" class="menu__link">About</a></li>
-            <li class="menu__item"><a href="#" class="menu__link">Page</a></li>
-            <li class="menu__item"><a href="#" class="menu__link">Class</a></li>
-            <li class="menu__item"><a href="#" class="menu__link">Schedule</a></li>
+            <li class="menu__item"><a href="#about" class="menu__link">About</a></li>
+            <li class="menu__item"><a href="#class" class="menu__link">Page</a></li>
+            <li class="menu__item"><a href="#class" class="menu__link">Class</a></li>
+            <li class="menu__item"><a href="#time" class="menu__link">Schedule</a></li>
             <li class="menu__item"><a href="#" class="menu__link">Blog</a></li>
-            <li class="menu__item"><a href="#" class="menu__link">Shop</a></li>
-            <li class="menu__item"><a href="#" class="menu__link">Contact</a></li>
+            <li class="menu__item"><a href="#shop" class="menu__link">Shop</a></li>
+            <li class="menu__item"><a href="#footer" class="menu__link">Contact</a></li>
           </ul>
         </nav>
         <button class="search"><img src="img/search.svg" alt=""></button>
@@ -58,7 +58,7 @@
   </header>
 
   <main>
-    <section class="about hidden">
+    <section class="about" id="about">
       <div class="container">
         <div class="about__blocks">
 
@@ -103,7 +103,7 @@
       </div>
     </section>
 
-    <section class="class hidden">
+    <section class="class" id="class">
       <div class="container">
 
         <div class="class__blocks">
@@ -259,7 +259,7 @@
       </div>
     </section>
 
-    <section class="second__class hidden">
+    <section class="second__class">
       <div class="container">
         <div class="second__block">
           <div class="second__left">
@@ -323,7 +323,7 @@
       </div>
     </section>
 
-    <section class="trainers hidden">
+    <section class="trainers">
       <div class="container">
         <div class="trainer__blocks">
 
@@ -389,7 +389,7 @@
       </div>
     </section>
 
-    <section class="time hidden">
+    <section class="time" id="time">
       <div class="container">
 
         <div class="time__blocks">
@@ -590,8 +590,210 @@
       </div>
     </section>
 
+    <section class="shop" id="shop">
+      <div class="container">
+        <div class="shop__inner">
+
+          <div class="shop__text">
+            <div class="title">shop online</div>
+            <h2>Our Online Gym Store</h2>
+            <p>Gym an unknown printer took a gallery of type and scrambled. It has survived unknown printercenturies.
+            </p>
+          </div>
+
+          <div class="shop__cards">
+
+            <div class="shop__card">
+              <div class="shop__block" data-sale="-20%" data-name="Working Dumble">
+                <img src="img/card-1.png" alt="">
+              </div>
+
+              <div class="shop__title">
+                <h4>$80</h4>
+                <div class="rating">
+                  <ul class="rating__list" data-total-value="4">
+                    <li class="rating__item" data-item-value="5">★</li>
+                    <li class="rating__item" data-item-value="4">★</li>
+                    <li class="rating__item" data-item-value="3">★</li>
+                    <li class="rating__item" data-item-value="2">★</li>
+                    <li class="rating__item" data-item-value="1">★</li>
+                  </ul>
+                </div>
+              </div>
+              <button class="btn"><img src="img/buy.svg" alt="svg"> add to card</button>
+            </div>
+            <!-- ============ -->
+            <div class="shop__card">
+              <div class="shop__block" data-sale="new" data-name="Gym Equipment">
+                <img src="img/card-2.png" alt="">
+              </div>
+
+              <div class="shop__title">
+                <h4>$60</h4>
+                <div class="rating">
+                  <ul class="rating__list" data-total-value="4">
+                    <li class="rating__item" data-item-value="5">★</li>
+                    <li class="rating__item" data-item-value="4">★</li>
+                    <li class="rating__item" data-item-value="3">★</li>
+                    <li class="rating__item" data-item-value="2">★</li>
+                    <li class="rating__item" data-item-value="1">★</li>
+                  </ul>
+                </div>
+              </div>
+              <button class="btn"><img src="img/buy.svg" alt="svg"> add to card</button>
+            </div>
+
+            <div class="shop__card">
+              <div class="shop__block" data-sale="-5%" data-name="Gym Nike Sneaker">
+                <img src="img/card-3.png" alt="">
+              </div>
+
+              <div class="shop__title">
+                <h4>$60</h4>
+                <div class="rating">
+                  <ul class="rating__list" data-total-value="4">
+                    <li class="rating__item" data-item-value="5">★</li>
+                    <li class="rating__item" data-item-value="4">★</li>
+                    <li class="rating__item" data-item-value="3">★</li>
+                    <li class="rating__item" data-item-value="2">★</li>
+                    <li class="rating__item" data-item-value="1">★</li>
+                  </ul>
+                </div>
+              </div>
+              <button class="btn"><img src="img/buy.svg" alt="svg"> add to card</button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="calculate">
+      <div class="container">
+        <div class="calculate__blocks">
+
+          <div class="calc__left">
+            <h2>Calculate Your BMI</h2>
+            <p>Gym an unknown printer took a gallery of type and scrambled.
+              It has survived unknown printercenturies.</p>
+          </div>
+
+          <div class="calc__right">
+
+            <div class="calc__temp">
+
+              <div class="calc__first">
+
+                <div class="round">
+                  <input type="checkbox" checked id="checkbox1" />
+                  <label for="checkbox1"></label>
+                  <p>Metric Units</p>
+                </div>
+
+                <input type="text" class="calc__input" placeholder="Weight / kg">
+
+                <button class="btn">CALCULATE</button>
+              </div>
+
+              <div class="calc__first">
+
+                <div class="round">
+                  <input type="checkbox" checked id="checkbox2" />
+                  <label for="checkbox2"></label>
+                  <p>Metric Units</p>
+                </div>
+
+                <input type="text" class="calc__input" placeholder="Weight / kg">
+
+
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="fitness__c">
+      <div class="container">
+        <h2>Need a Fitness Consultant?</h2>
+        <button href="tel:130-4044888"><span>Call</span>:+130-4044888</button>
+      </div>
+    </section>
   </main>
-  <footer></footer>
+
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer__blocks">
+
+        <div class="footer_first">
+          <a href="#" class="logo"><img src="img/logo-geo.svg" alt="logo">Gymat</a>
+          <p>Gesent vel rutrum purus Nam vel dui eu risus duis dignissim dignissim Suspen disse at eros tempus</p>
+          <div class="footer__social">
+            <ul class="footer__social--list">
+              <li class="footer__social--item">
+                <a href="#" class="footer__social--link">
+                  <img src="img/footer_face.svg" alt="">
+                </a>
+
+              </li>
+              <li class="footer__social--item">
+                <a href="#" class="footer__social--link">
+                  <img src="img/footer__inst.svg" alt="">
+                </a>
+              </li>
+
+              <li class="footer__social--item">
+                <a href="#" class="footer__social--link">
+                  <img src="img/footer__twitt.svg" alt="">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer__second">
+          <h6>Our Classes</h6>
+
+          <ul class="footer__list">
+            <li class="footer__item"><a href="#" class="footer_link">Fitness Classes</a></li>
+            <li class="footer__item"><a href="#" class="footer_link">Aerobics Classes</a></li>
+            <li class="footer__item"><a href="#" class="footer_link">Power Yoga</a></li>
+            <li class="footer__item"><a href="#" class="footer_link">Lean Machines</a></li>
+            <li class="footer__item"><a href="#" class="footer_link">Full-Body Strength</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__second">
+          <h6>Quick Links</h6>
+
+          <ul class="footer__list">
+            <li class="footer__item"><a href="#" class="footer_link">Fitness Classes</a></li>
+            <li class="footer__item"><a href="#" class="footer_link">Aerobics Classes</a></li>
+            <li class="footer__item"><a href="#" class="footer_link">Power Yoga</a></li>
+            <li class="footer__item"><a href="#" class="footer_link">Lean Machines</a></li>
+            <li class="footer__item"><a href="#" class="footer_link">Full-Body Strength</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__last">
+          <h6>Gymat Location</h6>
+
+          <address>178 West 27th Street, Suite 527, New York NY 10012 United States</address>
+
+          <button href="tel:1-234-5678901"><img src="img/phone.svg" alt="">+1-234-5678901</button>
+          <button href="mail:gymat@yourname.com">gymat@yourname.com</button>
+        </div>
+
+
+      </div>
+    </div>
+
+  </footer>
+  <div class="copyrate">
+    <p>Copyright © <span class="current-year"> </span> Itawa. All rights reserved.</p>
+  </div>
   <!-- End -->
   <script src="./js/swiper-bundle.min.js"></script>
   <script src="./js/main.js"></script>

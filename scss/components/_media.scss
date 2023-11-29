@@ -19,6 +19,19 @@
     }
   }
   // .time {display: none;}
+  // ==================
+  .price__card{
+    width: 80%;
+  }
+  .price__cards{
+    align-items: center
+  }
+  .price__temp{
+    .btn{
+      font-size: 12px;
+      padding: 6px 12px;
+    }
+  }
 }
 
 // Средние девайсы («таблетки», >= 768px)
@@ -61,6 +74,15 @@
   .price__cards{
     flex-direction: column;
   }
+  // ===========
+  .calculate__blocks{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .calc__temp{
+    flex-direction: column;
+  }
 }
 
 // Большие девайсы (десктопы, >= 992px)
@@ -90,7 +112,10 @@
     align-items: center;
   }
   // =============
-
+  .footer__blocks{
+    flex-wrap: wrap;
+    
+  }
 }
 
 // Экстрабольшие девайсы (большие десктопы, >= 1200px)
